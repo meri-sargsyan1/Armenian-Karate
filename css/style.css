@@ -9312,7 +9312,7 @@ html:not(.ie-10):not(.ie-11):not(.ie-edge) .team-karen-header svg {
 .page {
     position: relative;
     overflow: hidden;
-    min-height: 70vh;
+    min-height: 20vh;
 }
 .page.fadeIn {
     animation-timing-function: ease-out
@@ -12515,6 +12515,7 @@ html.tablet .ui-to-top {
     z-index: 1080;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 64px;
     padding: 4px
 }
@@ -20221,5 +20222,40 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
 @media(max-width:767px) {
     .quote-about {
         padding: 1px;
+    }
+}
+.doshinkan-btn {
+    width:50%;
+    display: inline-block;
+    background-color: #9f0427;
+    color: #fff;
+    font-family: 'Arial',
+    sans-serif;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+    transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,
+    0,
+    0,
+    0.2);
+    margin-top: 10px;
+}
+.doshinkan-btn:hover {
+    background-color: #b10a31;
+    transform: translateY(-2px);
+}
+
+/* Ռեսպոնզիվ հատված */
+@media (max-width: 480px) {
+    .doshinkan-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 14px 0;
+        border-radius: 10px;
     }
 }
